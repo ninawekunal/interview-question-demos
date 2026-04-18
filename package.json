@@ -4,6 +4,8 @@
   "description": "Repository to demonstrate the state management and UI aspect of one of the interview questions",
   "main": "index.js",
   "scripts": {
+    "update-features-json": "node ./scripts/update-features-json.cjs",
+    "predev": "npm run update-features-json",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -28,6 +30,7 @@
     "@vitejs/plugin-react": "^6.0.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-router-dom": "^7.14.1",
     "vite": "^8.0.8"
   }
 }

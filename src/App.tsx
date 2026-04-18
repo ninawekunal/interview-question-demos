@@ -1,14 +1,18 @@
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import ProductPageWishlist from "./features/ProductPageWishlist/App";
-
-const queryClient = new QueryClient();
+import { Route, Routes } from "react-router-dom";
+import FeatureTabs from "./features/FeatureTabs/FeatureTabs";
+import ProductPageWishlistApp from "./features/ProductPageWishlist/App";
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      {/* You can import and render other features here as needed */}
-      <ProductPageWishlist />
-    </QueryClientProvider>
+    <>
+      <Routes>
+        <Route path="/" element={<FeatureTabs />} />
+        <Route
+          path="/ProductPageWishlist"
+          element={<ProductPageWishlistApp />}
+        />
+      </Routes>
+    </>
   );
 }
 

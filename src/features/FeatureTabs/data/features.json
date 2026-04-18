@@ -1,0 +1,31 @@
+[
+  {
+    "name": "ProductPageWishlist",
+    "skills": [
+      { "title": "React-query", "description": "To fetch data from live API" },
+      {
+        "title": "State management",
+        "description": "Toggle states of products in wishlist"
+      },
+      {
+        "title": "Pagination",
+        "description": "Load More data"
+      },
+      {
+        "title": "Loading state",
+        "description": "Handle Loading state while fetching data"
+      }
+    ],
+    "demoUrl": "/ProductPageWishlist/"
+  },
+  {
+    "name": "Tanstack table",
+    "skills": [
+      {
+        "title": "Tanstack Table",
+        "description": "Managed Table"
+      }
+    ],
+    "demoUrl": "/"
+  }
+]
