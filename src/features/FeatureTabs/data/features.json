@@ -14,18 +14,22 @@
       {
         "title": "Loading state",
         "description": "Handle Loading state while fetching data"
+      },
+      {
+        "title": "Production folder structure",
+        "description": "Folder structure that works for production apps and is scalable"
       }
     ],
     "demoUrl": "/ProductPageWishlist/"
   },
   {
-    "name": "Tanstack table",
+    "name": "Contact Form",
     "skills": [
       {
-        "title": "Tanstack Table",
-        "description": "Managed Table"
+        "title": "React-Query-mutation",
+        "description": "Mutations in react-query"
       }
     ],
-    "demoUrl": "/"
+    "demoUrl": "/ContactForm"
   }
 ]

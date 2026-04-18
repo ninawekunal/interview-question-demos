@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   // GitHub Pages serves projects from `/<repo>/` by default. This makes built asset URLs work
   // when deployed via the Pages workflow.
-  base: process.env.GITHUB_PAGES ? '/product-wishlist/' : '/',
+  base: process.env.GITHUB_PAGES ? '/interview-question-demos/' : '/',
   plugins: [react()],
 })

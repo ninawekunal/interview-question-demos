@@ -1,11 +1,10 @@
 {
-  "name": "product-wishlist",
+  "name": "interview-question-demos",
   "version": "1.0.0",
   "description": "Repository to demonstrate the state management and UI aspect of one of the interview questions",
   "main": "index.js",
   "scripts": {
     "update-features-json": "node ./scripts/update-features-json.cjs",
-    "predev": "npm run update-features-json",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -13,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ninawekunal/product-wishlist.git"
+    "url": "git+https://github.com/ninawekunal/interview-question-demos.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/ninawekunal/product-wishlist/issues"
+    "url": "https://github.com/ninawekunal/interview-question-demos/issues"
   },
-  "homepage": "https://github.com/ninawekunal/product-wishlist#readme",
+  "homepage": "https://github.com/ninawekunal/interview-question-demos#readme",
   "dependencies": {
     "@tanstack/react-query": "^5.99.0",
     "@types/react": "^19.2.14",

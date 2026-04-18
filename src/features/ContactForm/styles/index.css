@@ -1,0 +1,55 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.addToWishlist {
+    align-items: center;
+    text-decoration: bold;
+    min-width: 50px;
+}
+
+.addToWishlist:hover {
+    cursor: pointer;
+}
+
+#loadMoreButton {
+    max-width: 120px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#loadMoreButton:hover {
+    cursor: pointer;
+}
