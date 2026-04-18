@@ -1,33 +1,12 @@
-import "../index.css";
-import ProductTable from "./product_table";
-import { useQuery } from "@tanstack/react-query";
-import dummyProducts from "../features/ProductPageWishlist/data/products.js";
+import "./styles/index.css";
+import ProductTable from "./components/ProductTable";
+import { useProducts } from "./hooks/useProducts";
 import { useState } from "react";
 
-async function fetchProducts() {
-  try {
-    const response = await fetch("https://fakestoreapi.com/products", {
-      method: "GET",
-      headers: {
-        "content-type": "application/json",
-      },
-    });
-    return response.json();
-  } catch (ex) {
-    throw ex;
-  }
-}
-
-export default function MainContent() {
+export default function ProductPageWishlist() {
   const [visibleCount, setVisibleCount] = useState(5);
 
-  const { data, error, isLoading } = useQuery({
-    queryKey: ["products"],
-    queryFn: fetchProducts,
-  });
-
-  const products = error ? dummyProducts : (data ?? []);
-
+  const { products, error, isLoading } = useProducts();
   const displayedProducts = products.slice(0, visibleCount);
 
   const loadMoreProducts = () => {

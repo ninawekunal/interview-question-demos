@@ -1,16 +1,14 @@
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import MainContent from "./components/MainContent";
+import ProductPageWishlist from "./features/ProductPageWishlist/App";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
-    <>
-      <QueryClientProvider client={queryClient}>
-        <h1>Welcome to products</h1>
-        <MainContent />
-      </QueryClientProvider>
-    </>
+    <QueryClientProvider client={queryClient}>
+      {/* You can import and render other features here as needed */}
+      <ProductPageWishlist />
+    </QueryClientProvider>
   );
 }
 

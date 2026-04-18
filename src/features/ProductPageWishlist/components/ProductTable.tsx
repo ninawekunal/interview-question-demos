@@ -1,16 +1,10 @@
-import "../index.css";
+import "../styles/index.css";
+import { Product } from "../types";
 
 type ProductTableProps = {
   products: Product[];
   wishlistItems: Set<number>;
   toggleWishlist: (productId: number) => void;
-};
-
-export type Product = {
-  id: number;
-  title: string;
-  price: number;
-  description?: string;
 };
 
 export default function ProductTable({
