@@ -8,7 +8,7 @@ type ProductTableProps = {
 
 export type Product = {
   id: number;
-  name: string;
+  title: string;
   price: number;
   description?: string;
 };
@@ -35,7 +35,7 @@ export default function ProductTable({
             return (
               <tr key={product.id}>
                 <td>{product.id}</td>
-                <td>{product.name}</td>
+                <td>{product.title}</td>
                 <td>{product.price}</td>
                 <td>{product.description}</td>
                 <td>
@@ -43,7 +43,8 @@ export default function ProductTable({
                     onClick={() => toggleWishlist(product.id)}
                     className="addToWishlist"
                   >
-                    {wishlistItems.has(product.id) ? "-" : "+"}
+                    {wishlistItems.has(product.id) ? "Remove from " : "Add to "}
+                    wishlist
                   </button>
                 </td>
               </tr>
