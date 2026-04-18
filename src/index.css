@@ -6,6 +6,12 @@ body {
     background-color: #f4f4f4;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     color: #333;
     text-align: center;
@@ -25,4 +31,26 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+.addToWishlist {
+    align-items: center;
+    text-decoration: bold;
+    min-width: 50px;
+    font-size: 20px;
+}
+
+.addToWishlist:hover {
+    cursor: pointer;
+}
+
+#loadMoreButton {
+    max-width: 120px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#loadMoreButton:hover {
+    cursor: pointer;
 }

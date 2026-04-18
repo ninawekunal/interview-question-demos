@@ -1,12 +1,4 @@
-// products.ts
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-}
-
-const products: Product[] = [
+const products = [
   { id: 1, name: "Wireless Bluetooth Headphones", price: 79.99, description: "High-quality sound with noise cancellation." },
   { id: 2, name: "Smartphone Stand", price: 19.99, description: "Adjustable stand for hands-free viewing." },
   { id: 3, name: "LED Desk Lamp", price: 49.99, description: "Energy-efficient lighting for your workspace." },
