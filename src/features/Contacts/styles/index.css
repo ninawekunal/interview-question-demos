@@ -53,3 +53,15 @@ th {
 #loadMoreButton:hover {
     cursor: pointer;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+.form>* {
+    padding: 5px;
+}

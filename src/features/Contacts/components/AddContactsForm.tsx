@@ -1,6 +1,14 @@
 import { useState } from "react";
+import "../styles/index.css";
+import type { User } from "../types";
 
-export default function AddContactsForm() {
+type AddContactsFormProps = {
+  addContactToUsers: (user: User) => void;
+};
+
+export default function AddContactsForm({
+  addContactToUsers,
+}: AddContactsFormProps) {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -15,12 +23,16 @@ export default function AddContactsForm() {
     }));
   }
 
-  function handleSubmit() {
-    // e.preventDefault();
+  function handleSubmit(e: React.SubmitEvent) {
+    e.preventDefault();
+    addContactToUsers(formState as User);
+    setFormState({ name: "", email: "", phone: "" });
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
+      <h2>Add Contact to the table below</h2>
+
       <input
         name="name"
         type="text"

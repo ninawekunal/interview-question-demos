@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import FeatureTabs from "./features/FeatureTabs/FeatureTabs";
 import ProductPageWishlistApp from "./features/ProductPageWishlist/App";
-import ContactForm from "./features/ContactForm/ContactForm";
+import Contacts from "./features/Contacts/Contacts";
 import Providers from "./Providers/AllProviders";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             path="/ProductPageWishlist"
             element={<ProductPageWishlistApp />}
           />
-          <Route path="/ContactForm" element={<ContactForm />} />
+          <Route path="/Contacts" element={<Contacts />} />
         </Routes>
       </Providers>
     </>
