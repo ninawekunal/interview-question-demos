@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import FeatureTabs from "./features/FeatureTabs/FeatureTabs";
 import ProductPageWishlistApp from "./features/ProductPageWishlist/App";
 import ContactForm from "./features/ContactForm/ContactForm";
@@ -8,16 +8,14 @@ function App() {
   return (
     <>
       <Providers>
-        <BrowserRouter basename="/interview-question-demos">
-          <Routes>
-            <Route path="/" element={<FeatureTabs />} />
-            <Route
-              path="/ProductPageWishlist"
-              element={<ProductPageWishlistApp />}
-            />
-            <Route path="/ContactForm" element={<ContactForm />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FeatureTabs />} />
+          <Route
+            path="/ProductPageWishlist"
+            element={<ProductPageWishlistApp />}
+          />
+          <Route path="/ContactForm" element={<ContactForm />} />
+        </Routes>
       </Providers>
     </>
   );
