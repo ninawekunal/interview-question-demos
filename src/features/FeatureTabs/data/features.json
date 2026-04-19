@@ -1,6 +1,7 @@
 [
   {
     "name": "Product Page with Wishlist",
+    "subHeading": "Display products and add them to a wishlist",
     "skills": [
       { "title": "React-query", "description": "To fetch data from live API" },
       {
@@ -36,6 +37,7 @@
   },
   {
     "name": "Contact Form",
+    "subHeading": "Add contact information to a table rendering data from an API",
     "skills": [
       {
         "title": "React-Query-mutation",
