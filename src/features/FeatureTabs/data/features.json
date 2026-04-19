@@ -2,48 +2,35 @@
   {
     "name": "Product Page with Wishlist",
     "subHeading": "Display products and add them to a wishlist",
-    "skills": [
-      { "title": "React-query", "description": "To fetch data from live API" },
+    "demoUrl": "/ProductPageWishlist/",
+    "learnings": [
       {
-        "title": "State management",
-        "description": "Toggle states of products in wishlist"
+        "title": "Data Fetching",
+        "description": "Fetched and displayed live API data using React Query."
       },
       {
-        "title": "State management",
-        "description": "Toggle states of products in wishlist"
+        "title": "State Management",
+        "description": "Managed wishlist interactions using efficient local state updates."
       },
       {
-        "title": "State management",
-        "description": "Toggle states of products in wishlist"
-      },
-      {
-        "title": "State management",
-        "description": "Toggle states of products in wishlist"
+        "title": "UX States",
+        "description": "Handled loading, error, and empty states for a smoother user experience."
       },
       {
         "title": "Pagination",
-        "description": "Load More data"
+        "description": "Implemented incremental load-more pagination for better usability."
       },
       {
-        "title": "Loading state",
-        "description": "Handle Loading state while fetching data"
-      },
-      {
-        "title": "Production folder structure",
-        "description": "Folder structure that works for production apps and is scalable"
+        "title": "UI System",
+        "description": "Used Material UI components to build a clean and scalable interface."
       }
     ],
-    "demoUrl": "/ProductPageWishlist/"
-  },
-  {
-    "name": "Contact Form",
-    "subHeading": "Add contact information to a table rendering data from an API",
     "skills": [
-      {
-        "title": "React-Query-mutation",
-        "description": "Mutations in react-query"
-      }
-    ],
-    "demoUrl": "/Contacts"
+      { "title": "React Query" },
+      { "title": "Wishlist State" },
+      { "title": "Loading / Error States" },
+      { "title": "Pagination" },
+      { "title": "Material UI" }
+    ]
   }
 ]

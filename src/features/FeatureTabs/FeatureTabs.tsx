@@ -4,17 +4,13 @@ import { Link } from "react-router-dom";
 import {
   Button,
   Card,
-  CardContent,
   CardHeader,
-  Chip,
   Container,
   Divider,
-  Grid,
-  Stack,
   Tab,
   Tabs,
-  Typography,
 } from "@mui/material";
+import LearningsCard from "./components/LearningsCard";
 
 export default function FeatureTabs() {
   const [selected, setSelected] = useState(0);
@@ -23,36 +19,28 @@ export default function FeatureTabs() {
     setSelected(newValue);
   }
 
+  const selectedFeature = features[selected];
+
   return (
-    <Container maxWidth="sm" sx={{ gap: 1 }}>
+    <Container maxWidth="sm">
       <Tabs value={selected} onChange={handleChange} variant="scrollable">
-        {features.map((feature, idx) => {
-          return <Tab key={idx} label={feature.name} />;
-        })}
+        {features.map((feature, idx) => (
+          <Tab key={idx} label={feature.name} />
+        ))}
       </Tabs>
 
       <Card raised>
         <CardHeader
-          title={features[selected].name}
+          title={selectedFeature.name}
           action={
-            <Link to={features[selected].demoUrl}>
+            <Link to={selectedFeature.demoUrl}>
               <Button variant="outlined">Go to Live Demo</Button>
             </Link>
           }
-          subheader={features[selected].subHeading}
+          subheader={selectedFeature.subHeading}
         />
         <Divider />
-        <CardContent>
-          <Container>
-            <Typography variant="h6">Skills / Learnings</Typography>
-            <Stack direction="row" sx={{ gap: 1, flexWrap: "wrap" }}>
-              {features[selected].skills.map((skill, index) => {
-                return <Chip label={skill.title} key={index} clickable />;
-              })}
-            </Stack>
-          </Container>
-        </CardContent>
-        <Container></Container>
+        <LearningsCard feature={selectedFeature} />
       </Card>
     </Container>
   );
