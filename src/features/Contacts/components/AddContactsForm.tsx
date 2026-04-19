@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../styles/index.css";
 import type { User } from "../types";
+import { Button } from "@mui/material";
 
 type AddContactsFormProps = {
   addContactToUsers: (user: User) => void;
@@ -57,7 +57,9 @@ export default function AddContactsForm({
         value={formState.phone}
         onChange={handleChange}
       />
-      <button type="submit">Add Contact</button>
+      <Button type="submit" variant="contained">
+        Add Contact
+      </Button>
     </form>
   );
 }

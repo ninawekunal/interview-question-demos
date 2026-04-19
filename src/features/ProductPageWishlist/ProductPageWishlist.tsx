@@ -1,4 +1,3 @@
-import "./styles/index.css";
 import ProductTable from "./components/ProductTable";
 import { useProducts } from "./hooks/useProducts";
 import { useState } from "react";

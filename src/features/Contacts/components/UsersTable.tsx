@@ -1,4 +1,3 @@
-import "../styles/index.css";
 import { User } from "../types";
 
 type UserTableProps = {
@@ -10,7 +9,6 @@ export default function UserTable({ users }: UserTableProps) {
     <table>
       <thead>
         <tr>
-          <th>ID</th>
           <th>Name</th>
           <th>Email</th>
           <th>Phone</th>
@@ -20,7 +18,6 @@ export default function UserTable({ users }: UserTableProps) {
         {users.map((user) => {
           return (
             <tr key={user.id}>
-              <td>{user.id}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>

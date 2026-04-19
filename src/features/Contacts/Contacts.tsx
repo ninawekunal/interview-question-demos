@@ -1,4 +1,3 @@
-import "./styles/index.css";
 import { useUsers } from "./hooks/useUsers";
 import UserTable from "./components/UsersTable";
 import AddContactsForm from "./components/AddContactsForm";

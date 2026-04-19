@@ -1,8 +1,20 @@
 [
   {
-    "name": "ProductPageWishlist",
+    "name": "Product Page with Wishlist",
     "skills": [
       { "title": "React-query", "description": "To fetch data from live API" },
+      {
+        "title": "State management",
+        "description": "Toggle states of products in wishlist"
+      },
+      {
+        "title": "State management",
+        "description": "Toggle states of products in wishlist"
+      },
+      {
+        "title": "State management",
+        "description": "Toggle states of products in wishlist"
+      },
       {
         "title": "State management",
         "description": "Toggle states of products in wishlist"

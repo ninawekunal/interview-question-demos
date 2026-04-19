@@ -1,39 +1,40 @@
 import { useState } from "react";
-import "./styles/index.css";
 import features from "./data/features.json";
 import { Link } from "react-router-dom";
+import { Button, Chip, Container, Grid, Stack, Tab, Tabs } from "@mui/material";
 
 export default function FeatureTabs() {
   const [selected, setSelected] = useState(0);
 
+  function handleChange(_event: React.SyntheticEvent, newValue: number) {
+    setSelected(newValue);
+  }
+
   return (
-    <div className="feature-tabs-container">
-      <div className="feature-tabs-bar">
-        {features.map((feature, idx) => (
-          <button
-            key={feature.name}
-            className={"feature-tab" + (selected === idx ? " selected" : "")}
-            onClick={() => setSelected(idx)}
-          >
-            {feature.name}
-          </button>
-        ))}
-      </div>
-      <div className="feature-tab-content">
-        <h2>{features[selected].name}</h2>
-        <div className="project-skills">
-          {features[selected].skills.map((skill, index) => {
-            return (
-              <button className="project-skills-item" key={index}>
-                {skill.title}
-              </button>
-            );
-          })}
-        </div>
-        <Link to={features[selected].demoUrl}>
-          <button className="feature-demo-btn">Go to Live Demo</button>
-        </Link>
-      </div>
-    </div>
+    <Container maxWidth="sm">
+      <Tabs value={selected} onChange={handleChange} variant="scrollable">
+        {features.map((feature, idx) => {
+          return <Tab key={idx} label={feature.name} />;
+        })}
+      </Tabs>
+
+      <Grid direction="row" container spacing={2}>
+        <Container maxWidth="sm">
+          <h2>{features[selected].name}</h2>
+        </Container>
+        <Container>
+          <Stack direction="row" sx={{ gap: 1, flexWrap: "wrap" }}>
+            {features[selected].skills.map((skill, index) => {
+              return <Chip label={skill.title} key={index} clickable />;
+            })}
+          </Stack>
+        </Container>
+        <Container>
+          <Link to={features[selected].demoUrl}>
+            <Button variant="outlined">Go to Live Demo</Button>
+          </Link>
+        </Container>
+      </Grid>
+    </Container>
   );
 }

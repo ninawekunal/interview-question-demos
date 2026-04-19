@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/ninawekunal/interview-question-demos#readme",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.0.0",
     "@tanstack/react-query": "^5.99.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
