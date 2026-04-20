@@ -22,7 +22,7 @@ export default function FeatureTabs() {
   const selectedFeature = features[selected];
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="lg">
       <Tabs value={selected} onChange={handleChange} variant="scrollable">
         {features.map((feature, idx) => (
           <Tab key={idx} label={feature.name} />
