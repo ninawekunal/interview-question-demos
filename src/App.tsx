@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import FeatureTabs from "./features/FeatureTabs/FeatureTabs";
-import ProductPageWishlistApp from "./features/ProductPageWishlist/App";
-import Contacts from "./features/Contacts/Contacts";
-import Providers from "./Providers/AllProviders";
+import FeatureTabs from "./features/FeatureTabs/FeatureTabs.js";
+import ProductPageWishlistApp from "./features/ProductPageWishlist/App.js";
+import Contacts from "./features/Contacts/Contacts.js";
+import Providers from "./Providers/AllProviders.js";
+import TypeAhead from "./features/TypeAhead/TypeAheadComponent.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             element={<ProductPageWishlistApp />}
           />
           <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/Typeahead" element={<TypeAhead />} />
         </Routes>
       </Providers>
     </>

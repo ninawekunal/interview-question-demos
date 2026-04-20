@@ -1,9 +1,9 @@
-import { useUsers } from "./hooks/useUsers";
-import UserTable from "./components/UsersTable";
-import AddContactsForm from "./components/AddContactsForm";
-import { User } from "./types";
+import { useUsers } from "./hooks/useUsers.js";
+import UserTable from "./components/UsersTable.js";
+import AddContactsForm from "./components/AddContactsForm.js";
+import { type User } from "./types.js";
 import { useEffect, useState } from "react";
-import dummyUsers from "./data/dummyUsers";
+import dummyUsers from "./data/dummyUsers.js";
 
 export default function Contacts() {
   const { data, error, isLoading } = useUsers();

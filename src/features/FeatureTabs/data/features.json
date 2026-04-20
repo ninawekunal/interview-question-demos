@@ -32,5 +32,10 @@
       { "title": "Pagination" },
       { "title": "Material UI" }
     ]
+  },
+  {
+    "name": "Suggestion autocomplete search",
+    "subHeading": "",
+    "demoUrl": "/Typeahead"
   }
 ]

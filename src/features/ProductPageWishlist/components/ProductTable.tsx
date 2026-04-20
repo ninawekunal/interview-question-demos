@@ -8,7 +8,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import { Product } from "../types";
+import { type Product } from "../types.js";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
 
 type ProductTableProps = {
