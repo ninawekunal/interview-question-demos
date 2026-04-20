@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, Typography } from "@mui/material";
 import type { Product } from "../types.js";
 
 type SelectedProductCardProps = {
-  selectedProduct: Product;
+  selectedProduct?: Product;
 };
 
 export default function SelectedProductCard({

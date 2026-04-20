@@ -35,7 +35,36 @@
   },
   {
     "name": "Suggestion autocomplete search",
-    "subHeading": "",
-    "demoUrl": "/Typeahead"
+    "subHeading": "Typeahead search input with product suggestions",
+    "demoUrl": "/Typeahead",
+    "learnings": [
+      {
+        "title": "Data Fetching",
+        "description": "Fetched product data with React Query and used local fallback data when the API fails."
+      },
+      {
+        "title": "Filtering Logic",
+        "description": "Built client-side matching to surface relevant suggestions as the user types."
+      },
+      {
+        "title": "State Management",
+        "description": "Tracked input value, filtered suggestions, and the selected suggestion with predictable local state."
+      },
+      {
+        "title": "UX Foundations",
+        "description": "Created a clear “search → suggestions → selection details” flow for a typeahead experience."
+      },
+      {
+        "title": "UI System",
+        "description": "Used Material UI components (TextField, Chip, Card) for a clean, reusable layout."
+      }
+    ],
+    "skills": [
+      { "title": "React Query" },
+      { "title": "Typeahead Filtering" },
+      { "title": "Local State" },
+      { "title": "Suggestion UX" },
+      { "title": "Material UI" }
+    ]
   }
 ]
